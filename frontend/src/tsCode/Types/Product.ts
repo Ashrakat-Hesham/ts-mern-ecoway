@@ -1,13 +1,13 @@
 export type Product = {
-  name: string
+  sold: number
+  images: string[]
+  ratingsQuantity: number
+  title: string
   slug: string
-  image: string
-  category: string
-  brand: string
-  price: number
-  rating: number
   description: string
-  numReviews: number
-  countInStock: number
+  quantity: number
+  price: number
+  priceAfterDiscount: number|undefined
+  imageCover: string
+  ratingsAverage: number
 }
-

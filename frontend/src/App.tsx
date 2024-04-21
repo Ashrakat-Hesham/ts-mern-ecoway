@@ -11,23 +11,27 @@ function App() {
             <Navbar.Brand>Eco Elite</Navbar.Brand>
           </Container>
           <Nav>
-            <a href="/cart" className='nav-link'>Cart</a>
-            <a href="/signin" className='nav-link'>Sign In</a>
+            <a href="/cart" className="nav-link">
+              Cart
+            </a>
+            <a href="/signin" className="nav-link">
+              Sign In
+            </a>
           </Nav>
         </Navbar>
       </header>
 
       <main>
-        <Container className='mt-3'>
+        <Container className="mt-3 text-center">
           <Row>
             {productSamples.map((product) => (
               <Col sm={12} md={6} lg={4} xl={3}>
                 <img
-                  className="w-100"
-                  src={product?.image}
-                  alt={product.name}
-                ></img>
-                <li>{product.name}</li>
+                  className="product-image"
+                  src={product?.images[0]}
+                  alt={product.title}
+                />
+                <li>{product.title}</li>
                 <li>{product.price}</li>
               </Col>
             ))}
