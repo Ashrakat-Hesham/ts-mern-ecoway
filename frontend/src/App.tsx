@@ -1,10 +1,9 @@
-import { Container, Nav, Navbar} from 'react-bootstrap'
-import './App.css'
+import { Container, Nav, Navbar } from 'react-bootstrap'
 import { Outlet } from 'react-router-dom'
 
 function App() {
   return (
-    <div className=" d-flex flex-column vh-100">
+    <div className="d-flex flex-column vh-100">
       <header>
         <Navbar bg="dark" variant="dark" expand="lg">
           <Container>
@@ -21,7 +20,7 @@ function App() {
         </Navbar>
       </header>
       <main>
-        <Container className="mt-3 text-center">
+        <Container className="mt-3">
           <Outlet />
         </Container>
       </main>
